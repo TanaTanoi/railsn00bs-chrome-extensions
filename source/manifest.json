@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Rails n00bs Extension",
+  "description": "Test Extension for Rails n00bs",
+  "version": "0.10",
+"content_scripts":
+  [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jQuery.min.js", "replacer.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
